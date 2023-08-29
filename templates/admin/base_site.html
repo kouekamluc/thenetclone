@@ -1,0 +1,12 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% csrf_token %}
+{% block branding %}
+    <h1 id='head'>
+        MentorShip
+    </h1>
+{% endblock branding %}
+
+{% block extrastyle %}
+<link rel='stylesheet' href="{% static 'hospitalmanagement/css/admin.css' %}">
+{% endblock extrastyle %}
